@@ -72,3 +72,5 @@ npm run build
 現在環境での実行結果と公開状況は `VALIDATION.md` を参照してください。
 
 LinuxのPlaywright WebKitは `context.setOffline(true)` 後の再読み込みが内部エラーになったため、WebKitのオフラインテストは配信サーバーの接続を切断し、実際にネットワーク取得できない状態でキャッシュから動くことを確認します。Chromiumはブラウザのoffline設定を使います。これをiPhone実機の機内モード検証の代わりとは扱いません。
+
+今回の公開試行は https://github.com/Kadogawa1369/which-word/actions/runs/42366019217 を参照。12テスト・ビルド・artifact作成は成功し、Pages未有効化によるNot Foundでdeployが停止しました。上記のSettings → Pages設定後にワークフローを再実行してください。公開URLでの配信確認はまだ完了していません。
